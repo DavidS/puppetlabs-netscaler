@@ -22,6 +22,6 @@ describe res_type do
   }
 
   it 'should have :name be its namevar' do
-    res_type.key_attributes.should == [:name]
+    expect(res_type.key_attributes).to eq([:name])
   end
 end
